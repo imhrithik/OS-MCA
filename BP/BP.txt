@@ -1,0 +1,39 @@
+Questions:
+
+BP1-Apply Peterson algorithm for solving the critical section problem with C/Java multi-threaded programming. Assume appropriate code snippet for critical section
+
+BP2-Apply Bakery algorithm for synchronization of processes/threads in a C/Java program. Assume appropriate code snippet for critical section.
+
+BP3-Write C/Java program to simulate and solve the Producer-Consumer
+Problem
+
+BP4-Implement Semaphore(s) in a C/Java-multithreaded program to simulate the working and solution of Reader-Writer problem. Assume multiple readers and writers
+
+BP5-Create a zombie process and an orphan process in a „C‟ program with appropriate system calls.
+
+BP6-Write a C program which creates a new process and allows both, child and parent, to report their identification numbers (ids). The parent process should wait for the termination of the child process.
+
+BP7-Write two C programs (A.c and B.c) where one program (A.c) creates a child process and then that child process executes the code of another program (B.c). The logic of program B.c is to generate all the prime numbers within the specified limit.
+
+BP8-Write an appropriate C program which implements the concept of
+dynamic memory allocation (use of malloc(), calloc(), realloc(), and free() system call).
+
+BP9-Create a text file, named as ‘courses.txt’ that contains the following three lines:
+Java Programming
+Operating System
+Discrete Structure
+Write a C program that forks three other processes. After forking, the parent process goes into wait state and waits for the children to finish their execution. Each child process reads a line from the ‘course.txt’ file (Child 1 Reads Line 1, Child 2 Reads Line 2, and Child 3 Reads Line 3) and each prints the respective line. The lines can be printed in any order.
+-------------------------------
+-------------------------------
+-------------------------------
+Methods to run a "c" file:
+
+M-1: gcc BP1.c -o BP1
+	./BP1
+
+M-2: gcc BP1.c -o Bp1.o -pthread
+	./BP1.o
+
+M-3: gcc BP1.c -o Bp1.o -lm
+	./BP1.o
+-------------------------------

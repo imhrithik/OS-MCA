@@ -1,0 +1,18 @@
+Questions:
+
+CP1-Write an appropriate C program which implements the concept of dynamic memory allocation (use malloc(), calloc(), realloc(), and free() system call).
+
+CP2-Write a C program that generates n integers and stores them in a text file, named as All.txt. Then, retrieve the stored integers from this file and copy to Odd.txt and Even.txt based upon the type of number. Finally, display the contents of all three files on the screen
+
+CP3-Write a program in C which accepts the file or directory name and permission from the user and then changes the access rights accordingly. Use system call(s) of Linux
+
+CP4-Write a C program which generates and stores the characters from a to z. Then, display the stored characters in alternative manner like: a, c, e, g, …, etc.
+
+CP5-Write a C program which receives roll number and names of n students, from the user one-by-one and then stores them in a text file, named as Student.txt. After inserting all n roll numbers and names, display the contents of file. Also, display the access rights of the file Student.txt.
+
+CP6-Demonstrate the use of following system calls by writing an appropriate C program.
+   (a)  lseek()
+   (b)  chmod()
+   (c)  umask()
+   (d)  access()
+   (e)  utime()

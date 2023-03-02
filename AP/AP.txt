@@ -1,0 +1,141 @@
+Questions:
+
+AP1- Run ps and note the PID of your shell. Log out and log in again and run ps again. What do you observe?
+
+AP2- Enter the following commands, and note your observations: (i) who and tty, (ii) tput clear, (iii) id, (iv) ps and echo $$.
+
+AP3- Run the following commands, and then invoke ls. What do you conclude? echo > README [Enter], echo > readme [Enter]
+
+AP4- Create a directory, and change to that directory. Next, create another directory in the new directory, and then change to that directory too. Now, run $ cd without any arguments followed by pwd. What do you conclude?
+
+AP5- Create a file mca containing the words “Hello MCA Class!”. Now create a directory bvicam, and then run mv mca bvicam. What do you observe when you run both ls and ls bvicam?
+
+AP6- Run $ whoami and then interpret the output.
+
+AP7- Find out whether the following commands are internal or external: echo, date, pwd, and ls.
+
+AP8- Display the current date in the form dd/mm/yyyy.
+
+AP9- Both of the following commands try to open the file mca, but the error  messages are a little different. What could be the reason?
+$ cat mca 
+cat: mca: No such file or directory 
+$ cat < mca 
+bash: mca: No such file or directory
+
+AP10- Run the following commands, and discuss their output?
+
+AP11- Frame ls command to (i) mark directories and executables separately, and  (ii) also display hidden files.
+
+AP12- Find out the result of following: 
+$ cat mca mca mca
+
+AP13- Run the following and determine which commands will work? Explain with reasons.
+
+AP14- How does the command mv mca1 mca2 behave, where both mca1 and mca2 are directories, when (i) mca2 exists, (ii) mca2 doesn’t exist?
+
+AP15- Assuming that you are positioned in the directory /home/bvicam, what  are these commands presumed to do, and explain whether they will work  at all: 
+    (a)  $ cd ../.. 
+    (b)  $ mkdir ../bin 
+    (c)  $ rmdir .. 
+    (d)  $ ls ..
+
+Solutions:
+
+AP1:
+ps
+cntrl+d - logout
+ssh - login
+ps
+-------------------------------
+Ap2:
+who
+whoami
+tty
+tput clear
+id
+ps
+echo $$
+-------------------------------
+AP3:
+echo > README
+echo > readme
+ls
+-------------------------------
+AP4:
+mkdir Test1
+cd Test1
+pwd
+cd
+pwd
+-------------------------------
+AP5:
+cat > mca.txt
+Hello MCA Class!
+cntrl+c
+ls
+mkdir BVICAM
+mv mca.txt BVICAM
+ls
+cd BVICAM
+ls
+-------------------------------
+AP6:
+whoami
+-------------------------------
+AP7:
+type echo
+type date
+type pwd
+type ls
+-------------------------------
+AP8:
+date +"%d/%m/%y"
+-------------------------------
+AP9:
+cat mca
+cat < mca
+-------------------------------
+AP10:
+uname
+passwd
+echo $SHELL
+man man
+q
+which echo
+whereis ls
+cd
+cd $HOME
+cd ~
+-------------------------------
+AP11:
+ls -F
+ls -a
+ls -F -a
+-------------------------------
+AP12:
+echo "Hello World!" > mca
+cat mca mca mca
+-------------------------------
+AP13:
+mkdir a/b/ 
+mkdir a a/b 
+rmdir a/b/c 
+rmdir a a/b
+-------------------------------
+AP14:
+mkdir mca1
+mkdir mca2
+ls
+mv mca1 mca2
+ls
+cd mca2
+ls
+mv mca2 mca1
+ls
+-------------------------------
+AP15:
+cd ../.. 
+mkdir ../bin 
+rmdir .. 
+ls ..
+-------------------------------
